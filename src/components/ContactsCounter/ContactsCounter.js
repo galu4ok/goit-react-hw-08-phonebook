@@ -7,7 +7,7 @@ export const ContactsCounter = () => {
   return (
     <div>
       <hr />
-      <p>Total contacts count: {count}</p>
+      <p>Contacts count: {count}</p>
     </div>
   );
 };

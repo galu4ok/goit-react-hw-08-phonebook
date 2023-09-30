@@ -2,6 +2,7 @@ import { ContactsForm } from './ContactsForm/ContactsForm';
 import { ContactsList } from './ContactsList/ContactsList';
 import { GlobalStyle } from './GlobalStyle';
 import { Filter } from './Filter/Filter';
+import { ContactsCounter } from './ContactsCounter/ContactsCounter';
 
 export const App = () => {
   return (
@@ -11,6 +12,7 @@ export const App = () => {
       <h2>Contacts</h2>
       <Filter />
       <ContactsList />
+      <ContactsCounter />
       <GlobalStyle />
     </>
   );

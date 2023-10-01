@@ -9,7 +9,7 @@ import * as Yup from 'yup';
 import { nanoid } from 'nanoid';
 import { PatternFormat } from 'react-number-format';
 import { useDispatch, useSelector } from 'react-redux';
-import { addContact } from 'redux/contactsSlice';
+import { addContact } from 'redux/operations';
 import { selectContacts } from 'redux/selectors';
 
 const schema = Yup.object().shape({
@@ -59,7 +59,7 @@ export const ContactsForm = () => {
           placeholder="Enter number"
           variant="standard"
           style={{ width: '440px' }}
-          format="###-##-##"
+          format="###-###-####"
           allowEmptyFormatting={true}
           mask="#"
         />

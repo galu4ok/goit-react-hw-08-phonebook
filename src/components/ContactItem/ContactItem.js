@@ -1,14 +1,14 @@
 import { useDispatch } from 'react-redux';
-import { deleteContact } from 'redux/contactsSlice';
+import { deleteContact } from 'redux/operations';
 import { Wrapper, Text, SpanText, DeleteBtn } from './ContactItem.styled';
 
-export const ContactItem = ({ contact: { name, number, id } }) => {
+export const ContactItem = ({ contact: { name, phone, id } }) => {
   const dispatch = useDispatch();
   const onDelete = () => dispatch(deleteContact(id));
   return (
     <Wrapper>
       <Text>
-        {name}:<SpanText>{number}</SpanText>
+        {name}:<SpanText>{phone}</SpanText>
       </Text>
       <DeleteBtn type="button" onClick={onDelete}>
         Delete

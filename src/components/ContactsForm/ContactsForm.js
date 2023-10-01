@@ -9,8 +9,8 @@ import * as Yup from 'yup';
 import { nanoid } from 'nanoid';
 import { PatternFormat } from 'react-number-format';
 import { useDispatch, useSelector } from 'react-redux';
-import { addContact } from 'redux/operations';
-import { selectContacts } from 'redux/selectors';
+import { addContact } from 'redux/contacts/operations';
+import { selectContacts } from 'redux/contacts/selectors';
 
 const schema = Yup.object().shape({
   name: Yup.string().required(

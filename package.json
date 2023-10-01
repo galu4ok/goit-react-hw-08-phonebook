@@ -2,7 +2,7 @@
   "name": "react-homework-template",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://galu4ok.github.io/goit-react-hw-07-phonebook/",
+  "homepage": "https://galu4ok.github.io/goit-react-hw-08-phonebook/",
   "dependencies": {
     "@redux-devtools/extension": "^3.2.5",
     "@reduxjs/toolkit": "^1.9.5",
@@ -12,6 +12,7 @@
     "axios": "^1.5.1",
     "formik": "^2.4.5",
     "modern-normalize": "^2.0.0",
+    "nanoid": "^5.0.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-number-format": "^5.3.1",

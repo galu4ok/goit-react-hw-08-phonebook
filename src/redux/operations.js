@@ -10,7 +10,6 @@ export const fetchContacts = createAsyncThunk(
       // виконуємо HTTP-запит та отримуємо усі контакти
       const response = await axios.get('/contacts');
       // При успішному запиті повертаємо проміс із даними
-      console.log(response.data);
       return response.data;
     } catch (e) {
       // При помилці запиту повертаємо проміс,який буде відхилений з текстом помилки
@@ -24,7 +23,6 @@ export const addContact = createAsyncThunk(
   async (contact, thunkAPI) => {
     try {
       const response = await axios.post('/contacts', contact);
-      console.log(response.data);
       return response.data;
     } catch (e) {
       return thunkAPI.rejectWithValue(e.message);

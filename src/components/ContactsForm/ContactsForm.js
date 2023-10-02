@@ -59,7 +59,7 @@ export const ContactsForm = () => {
           placeholder="Enter number"
           variant="standard"
           style={{ width: '440px' }}
-          format="###-###-####"
+          format="###-##-##"
           allowEmptyFormatting={true}
           mask="#"
         />

@@ -1,6 +1,8 @@
 import { useAuth } from 'hooks/useAuth';
 import { useDispatch } from 'react-redux';
+import { ImExit } from 'react-icons/im';
 import { logOut } from 'redux/auth/operations';
+import { LogOutBtn, Username, Wrapper } from './UserMenu.styled';
 
 export const UserMenu = () => {
   const dispatch = useDispatch();
@@ -8,11 +10,12 @@ export const UserMenu = () => {
   const handleLogOut = () => dispatch(logOut());
 
   return (
-    <div>
-      <p>Welcome to your Phone Book,{user.name} </p>
-      <button type="button" onClick={handleLogOut}>
+    <Wrapper>
+      <Username>Welcome to your Phone Book, {user.name}!</Username>
+      <LogOutBtn type="button" onClick={handleLogOut}>
+        <ImExit style={{ size: 210, margin: '0 10 0 0' }} />
         Logout
-      </button>
-    </div>
+      </LogOutBtn>
+    </Wrapper>
   );
 };

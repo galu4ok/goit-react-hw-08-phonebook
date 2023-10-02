@@ -6,7 +6,6 @@ import { ContactsForm } from 'components/ContactsForm/ContactsForm';
 import { ContactsList } from 'components/ContactsList/ContactsList';
 import { Filter } from 'components/Filter/Filter';
 import { ContactsCounter } from 'components/ContactsCounter/ContactsCounter';
-import { GlobalStyle } from 'components/GlobalStyle';
 
 const Contacts = () => {
   const dispatch = useDispatch();
@@ -27,7 +26,6 @@ const Contacts = () => {
       {isLoading && !error && <b>Request in progress... </b>}
       <ContactsList />
       <ContactsCounter />
-      <GlobalStyle />
     </>
   );
 };

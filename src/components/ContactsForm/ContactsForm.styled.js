@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import { Form, Field, ErrorMessage } from 'formik';
 
 export const StyledForm = styled(Form)`
+  margin-top: 15px;
+  width: 600px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -26,7 +28,8 @@ export const AddBtn = styled.button`
   border-radius: 5px;
   margin-bottom: 20px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: teal;
     color: white;
   }

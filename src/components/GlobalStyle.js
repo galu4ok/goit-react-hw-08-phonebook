@@ -21,7 +21,7 @@ h3,
 h4,
 p {
   margin: 0px;
-  padding: 5px;
+  padding: 0px;
 }
 
 ul {
@@ -37,6 +37,11 @@ a {
 }
 
 button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -47,13 +52,4 @@ h1,h2 {
   margin-bottom: 10px;
   }
 
-#root {
-  margin: 30px;
-  padding: 30px;
-  background-color: #b5e6ac;
-  width: 500px;
-  display: block;
-  border-radius: 8px;
-  box-shadow: 1px 1px 8px 0px #000000;  
-}
 `;

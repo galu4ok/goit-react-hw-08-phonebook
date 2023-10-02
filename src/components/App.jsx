@@ -6,6 +6,7 @@ import { refreshUser } from 'redux/auth/operations';
 import Layout from './Layout/Layout';
 import { PrivateRoute } from './PrivateRoute';
 import { RestrictedRoute } from './RestrictedRoute';
+import { GlobalStyle } from 'components/GlobalStyle';
 
 const HomePage = lazy(() => import('../pages/HomePage/HomePage'));
 const RegisterPage = lazy(() => import('../pages/RegisterPage/RegisterPage'));
@@ -49,6 +50,7 @@ export const App = () => {
           />
         </Route>
       </Routes>
+      <GlobalStyle />
     </>
   );
 };

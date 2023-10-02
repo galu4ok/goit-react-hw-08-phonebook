@@ -1,10 +1,18 @@
+import { ImUser, ImEnter } from 'react-icons/im';
 import { NavLink } from 'react-router-dom';
+import { Container } from './AuthNav.styled';
 
 export const AuthNav = () => {
   return (
-    <div>
-      <NavLink to="/register">Register</NavLink>
-      <NavLink to="/login">Log In</NavLink>
-    </div>
+    <Container>
+      <NavLink to="/register">
+        <ImUser style={{ size: 210, margin: '0 10 0 0' }} />
+        Register
+      </NavLink>
+      <NavLink to="/login">
+        <ImEnter style={{ size: 210, margin: '0 10 0 0' }} />
+        LogIn
+      </NavLink>
+    </Container>
   );
 };

@@ -7,12 +7,12 @@ import Layout from './Layout/Layout';
 import { PrivateRoute } from './PrivateRoute';
 import { RestrictedRoute } from './RestrictedRoute';
 import { GlobalStyle } from 'components/GlobalStyle';
-import NotFound from 'pages/NotFoundPage/NotFoundPage';
 
 const HomePage = lazy(() => import('../pages/HomePage/HomePage'));
 const RegisterPage = lazy(() => import('../pages/RegisterPage/RegisterPage'));
 const LoginPage = lazy(() => import('../pages/LoginPage/LoginPage'));
 const ContactsPage = lazy(() => import('../pages/ContactsPage/ContactsPage'));
+const NotFoundPage = lazy(() => import('../pages/NotFoundPage/NotFoundPage'));
 
 export const App = () => {
   const dispatch = useDispatch();
@@ -41,8 +41,8 @@ export const App = () => {
               <PrivateRoute component={ContactsPage} redirectTo="/login" />
             }
           />
+          <Route path="*" element={<NotFoundPage />} />
         </Route>
-        <Route path="*" element={<NotFound />} />
       </Routes>
       <GlobalStyle />
     </>
